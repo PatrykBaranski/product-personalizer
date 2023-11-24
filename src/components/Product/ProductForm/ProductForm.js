@@ -19,7 +19,7 @@ function ProductForm({
         <ul className={styles.choices}>
           {sizes.map((size, i) => (
             <OptionSize
-              key={i}
+              key={`${i}-product-option-size`}
               setCurrentSize={setCurrentSize}
               size={size}
               currentSize={currentSize}
@@ -33,7 +33,7 @@ function ProductForm({
         <ul className={styles.choices}>
           {colors.map((color, i) => (
             <OptionColor
-              key={i}
+              key={`${i}-product-option-color`}
               setCurrentColor={setCurrentColor}
               color={color}
               currentColor={currentColor}

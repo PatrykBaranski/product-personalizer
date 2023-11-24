@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useMemo, useState } from "react";
 import ProductImage from "./ProductImage";
 import ProductForm from "./ProductForm/ProductForm";
+
 const Product = ({ id, name, title, colors, sizes, basePrice }) => {
   const [currentSize, setCurrentSize] = useState(sizes[0]);
   const [currentColor, setCurrentColor] = useState(colors[0]);
